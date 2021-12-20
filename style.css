@@ -1,0 +1,77 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: gainsboro;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+    width: 60%;
+    height: 100vh;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+.container:hover{
+    cursor: url("img/kursorBig.png"), auto;
+}
+h1{
+    text-align: center;
+}
+
+.imgRow{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.slikaTv{
+    height: 220px;
+    width:30%;
+    background: url('img/tv.png') no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+}
+.slikaFriz{
+    height: 220px;
+    width:35%;
+    background: url('img/fridge.jpg') no-repeat;
+    background-size: 35%;
+    background-position: center;
+}
+.mesto{
+    z-index: 0;
+    transition: ease-in 0.5s;
+}
+.vucko
+{
+background: url('img/vuckoApd.png') bottom center no-repeat;
+z-index: 1;
+background-size: cover;
+background-position: center;
+height: 120px;
+width: 100px;
+margin-left:auto;
+margin-right: auto;
+top: 180px;
+position: relative;
+visibility: hidden;
+}
+.dugme{
+    text-align: center;
+}
+button{
+    font-size: 20px;
+    padding: 8px 14px;
+    background:linear-gradient(to bottom, royalblue, blue);
+    color:white;
+    border-radius: 15px;
+    border: 1px solid transparent;
+}
+button:hover{
+    background:linear-gradient(to bottom, blue, royalblue);
+    cursor: pointer;
+}
+
